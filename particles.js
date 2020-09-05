@@ -347,16 +347,8 @@ var pJS = function(tag_id, params){
       this.vy = velbase.y + Math.random()-0.5;
     }
 
-    // var theta = 2.0 * Math.PI * Math.random();
-    // this.vx = Math.cos(theta);
-    // this.vy = Math.sin(theta);
-
     this.vx_i = this.vx;
     this.vy_i = this.vy;
-
-    
-
-    /* if shape is image */
 
     var shape_type = pJS.particles.shape.type;
     if(typeof(shape_type) == 'object'){
@@ -382,9 +374,6 @@ var pJS = function(tag_id, params){
         }
       }
     }
-
-    
-
   };
 
 
@@ -430,22 +419,22 @@ var pJS = function(tag_id, params){
       case 'polygon':
         pJS.fn.vendors.drawShape(
           pJS.canvas.ctx,
-          p.x - radius / (pJS.particles.shape.polygon.nb_sides/3.5), // startX
-          p.y - radius / (2.66/3.5), // startY
-          radius*2.66 / (pJS.particles.shape.polygon.nb_sides/3), // sideLength
-          pJS.particles.shape.polygon.nb_sides, // sideCountNumerator
-          1 // sideCountDenominator
+          p.x - radius / (pJS.particles.shape.polygon.nb_sides/3.5), 
+          p.y - radius / (2.66/3.5), 
+          radius*2.66 / (pJS.particles.shape.polygon.nb_sides/3), 
+          pJS.particles.shape.polygon.nb_sides, 
+          1
         );
       break;
 
       case 'star':
         pJS.fn.vendors.drawShape(
           pJS.canvas.ctx,
-          p.x - radius*2 / (pJS.particles.shape.polygon.nb_sides/4), // startX
-          p.y - radius / (2*2.66/3.5), // startY
-          radius*2*2.66 / (pJS.particles.shape.polygon.nb_sides/3), // sideLength
-          pJS.particles.shape.polygon.nb_sides, // sideCountNumerator
-          2 // sideCountDenominator
+          p.x - radius*2 / (pJS.particles.shape.polygon.nb_sides/4), 
+          p.y - radius / (2*2.66/3.5), 
+          radius*2*2.66 / (pJS.particles.shape.polygon.nb_sides/3), 
+          pJS.particles.shape.polygon.nb_sides, 
+          2 
         );
       break;
 
@@ -498,18 +487,8 @@ var pJS = function(tag_id, params){
 
     for(var i = 0; i < pJS.particles.array.length; i++){
 
-      /* the particle */
       var p = pJS.particles.array[i];
 
-      // var d = ( dx = pJS.interactivity.mouse.click_pos_x - p.x ) * dx + ( dy = pJS.interactivity.mouse.click_pos_y - p.y ) * dy;
-      // var f = -BANG_SIZE / d;
-      // if ( d < BANG_SIZE ) {
-      //     var t = Math.atan2( dy, dx );
-      //     p.vx = f * Math.cos(t);
-      //     p.vy = f * Math.sin(t);
-      // }
-
-      /* move the particle */
       if(pJS.particles.move.enable){
         var ms = pJS.particles.move.speed/2;
         p.x += p.vx * ms;

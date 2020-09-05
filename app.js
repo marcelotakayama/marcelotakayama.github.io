@@ -119,7 +119,6 @@ particlesJS('particles-js',
 
 );
 
-// Wrap every letter in a span
 var textWrapper = document.querySelector('.ml6 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -200,11 +199,8 @@ window.onload = function () {
 
   'use strict';
 
-  // define variables
   var items = document.querySelectorAll(".timeline li");
 
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
@@ -223,9 +219,10 @@ window.onload = function () {
     }
   }
 
-  // listen for events
   window.addEventListener("load", callbackFunc);
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
 
 })();
+
+console.log("MackMobile, MackMobile... fico feliz por estarem olhando meu site tão detalhadamente, mas por aqui não tem nada muito interessante, eu acho...");
