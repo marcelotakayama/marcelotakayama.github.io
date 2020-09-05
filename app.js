@@ -225,7 +225,7 @@ window.onload = function () {
 
 })();
 
-console.log("Eita... fico feliz por estar olhando meu site tão detalhadamente, mas por aqui não tem nada muito interessante, eu acho... Mas já que você está aqui, por que não tenta rodar a função printaFoto()?");
+console.log("MackMobile MackMobile... fico feliz por estarem olhando meu site tão detalhadamente, mas por aqui não tem nada muito interessante, eu acho... Mas já que estão aqui, por que não tentam rodar a função printaFoto()?");
 console.log("");
 console.log("");
 
