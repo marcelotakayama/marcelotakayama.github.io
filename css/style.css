@@ -72,7 +72,7 @@ body{
 }
 
 .parallax {
-    background-image: url("img/coding-on-a-computer.jpg");
+    background-image: url("../img/coding-on-a-computer.jpg");
     min-height: 350px; 
     background-attachment: fixed;
     background-position: center;
