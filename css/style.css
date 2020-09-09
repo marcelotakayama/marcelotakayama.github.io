@@ -1,3 +1,4 @@
+/* configs da pagina geral */
 html {
     scroll-behavior: smooth;
    }
@@ -224,6 +225,7 @@ time {
   }
 }
 
+/* configs da sessão de competências */
 .mySkills{
   width: 95%;
   margin: 0 auto;
@@ -339,6 +341,7 @@ time {
   width: calc(100% - 10px);
 }
 
+/* configs dos botões de contato */
 .fa {
   padding: 20px;
   font-size: 30px;
