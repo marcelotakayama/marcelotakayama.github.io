@@ -317,6 +317,10 @@ time {
   background-color: #0059ff;
 }
 
+.bar.csharp::before{
+  background-color: green;
+}
+
 .bar.js::before{
   background-color: #ffe100;
 }
