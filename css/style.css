@@ -321,6 +321,10 @@ time {
   background-color: green;
 }
 
+.bar.angular::before{
+  background-color: red;
+}
+
 .bar.js::before{
   background-color: #ffe100;
 }
